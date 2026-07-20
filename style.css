@@ -184,12 +184,13 @@ p{line-height:1.65; margin:0 0 1em;}
 .social-icon{
   display:flex; align-items:center; justify-content:center;
   width:46px; height:46px;
-  border:1px solid rgba(232,180,99,.4);
   border-radius:50%;
-  color:var(--gold);
-  transition:background .15s ease, transform .15s ease;
+  transition:transform .15s ease, filter .15s ease;
 }
-.social-icon:hover{background:rgba(232,180,99,.12); transform:translateY(-2px);}
+.social-icon:hover{transform:translateY(-2px); filter:brightness(1.08);}
+.social-icon--whatsapp{background:#25D366;}
+.social-icon--instagram{background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);}
+.social-icon--tiktok{background:#010101;}
 
 /* EVENEMENTS */
 .evt-grid{
