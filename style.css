@@ -181,14 +181,15 @@ p{line-height:1.65; margin:0 0 1em;}
 .market-card h3{color:#fff; font-size:1.3rem; margin-bottom:.4em;}
 .market-card p{color:var(--ivory-60); margin:0;}
 .social-row{display:flex; gap:14px; margin-top:44px; flex-wrap:wrap;}
-.social-pill{
+.social-icon{
+  display:flex; align-items:center; justify-content:center;
+  width:46px; height:46px;
   border:1px solid rgba(232,180,99,.4);
+  border-radius:50%;
   color:var(--gold);
-  padding:10px 20px;
-  border-radius:999px;
-  font-size:.85rem; font-weight:600;
+  transition:background .15s ease, transform .15s ease;
 }
-.social-pill:hover{background:rgba(232,180,99,.1);}
+.social-icon:hover{background:rgba(232,180,99,.12); transform:translateY(-2px);}
 
 /* EVENEMENTS */
 .evt-grid{
