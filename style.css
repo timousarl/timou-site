@@ -209,6 +209,9 @@ p{line-height:1.65; margin:0 0 1em;}
   border-radius:50%;
 }
 .evt-actions{display:flex; gap:16px; flex-wrap:wrap; margin-top:1.6em;}
+.eventigo-badge{display:inline-block; margin-top:1.4em; opacity:.9; transition:opacity .15s ease;}
+.eventigo-badge:hover{opacity:1;}
+.eventigo-badge img{width:150px; height:auto; border-radius:2px;}
 .evt-gallery{
   display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
   margin-top:76px;
