@@ -163,6 +163,23 @@ p{line-height:1.65; margin:0 0 1em;}
   font-size:.85rem; color:var(--caramel-dark); margin-top:.7em; font-weight:500;
 }
 
+/* SANDWICHS */
+.sandwichs{background:var(--paper);}
+.sandwich-grid{
+  display:grid; grid-template-columns:.85fr 1.15fr; gap:64px; align-items:center;
+}
+.sandwich-media img{
+  border-radius:2px;
+  box-shadow:0 30px 60px -20px rgba(29,26,22,.3);
+}
+.sandwich-text h2{font-size:clamp(1.6rem, 3vw, 2.3rem);}
+.sandwich-gallery{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+  margin-top:76px;
+}
+.sandwich-gallery figure{margin:0;}
+.sandwich-gallery img{border-radius:2px; aspect-ratio:4/3; object-fit:cover; width:100%;}
+
 /* TROUVER */
 .trouver{
   background:var(--graphite);
