@@ -159,9 +159,6 @@
         <img src="images/sandwich-4.jpg" alt="Sandwich gourmand TIMOU au jambon cru, brie et poivrons rôtis sur pain croustillant">
       </figure>
       <figure>
-        <img src="images/sandwich-1.jpg" alt="Sandwich gourmand TIMOU à la volaille, tomate et salade, coupe transversale">
-      </figure>
-      <figure>
         <img src="images/sandwich-3.jpg" alt="Sandwich gourmand TIMOU au jambon cru, burrata et roquette">
       </figure>
       <figure>
@@ -273,6 +270,47 @@
     <span>SIRET 104 421 797 00010</span>
   </div>
 </footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+(function(){
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightboxImg');
+  var closeBtn = document.getElementById('lightboxClose');
+  var selectors = '.concept-media img, .concept-strip img, .sandwich-media img, .sandwich-gallery img, .evt-media img, .evt-gallery img, .contact-logo img';
+
+  document.querySelectorAll(selectors).forEach(function(img){
+    img.addEventListener('click', function(){
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt || '';
+      lightbox.classList.add('is-open');
+    });
+  });
+
+  function closeLightbox(){
+    lightbox.classList.remove('is-open');
+    lightboxImg.src = '';
+  }
+
+  closeBtn.addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', function(e){
+    if(e.target === lightbox){
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      closeLightbox();
+    }
+  });
+})();
+</script>
 
 </body>
 </html>
