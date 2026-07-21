@@ -92,9 +92,9 @@ p{line-height:1.65; margin:0 0 1em;}
   color:var(--ink);
   background:var(--gold);
   border:1px solid var(--gold);
-  padding:20px 40px;
+  padding:32px 64px;
   border-radius:999px;
-  font-size:1.5rem; font-weight:700;
+  font-size:2.8rem; font-weight:700;
   white-space:nowrap;
 }
 .header-cta:hover{background:#fff; border-color:#fff;}
