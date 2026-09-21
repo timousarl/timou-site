@@ -276,9 +276,64 @@ p{line-height:1.65; margin:0 0 1em;}
 .contact-details span{color:#77706570; font-family:'Work Sans', sans-serif; font-size:.92rem; color:#8a8175;}
 .contact-logo img{border-radius:2px;}
 
+/* CONTACT FORM */
+.contact-form{
+  margin-top:1.8em;
+  padding:28px;
+  background:var(--paper);
+  border:1px solid rgba(29,26,22,.08);
+  border-radius:2px;
+  max-width:520px;
+}
+.contact .contact-form{background:#fff;}
+.hp-field{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;}
+.form-row{margin-bottom:16px;}
+.form-row:last-of-type{margin-bottom:20px;}
+.form-row label{
+  display:block; font-size:.85rem; font-weight:600;
+  margin-bottom:6px; color:var(--ink);
+}
+.form-row input, .form-row textarea{
+  width:100%;
+  font-family:'Work Sans', sans-serif;
+  font-size:.95rem;
+  padding:11px 13px;
+  border:1.5px solid rgba(29,26,22,.16);
+  border-radius:2px;
+  background:#fff;
+  color:var(--ink);
+  resize:vertical;
+}
+.form-row input:focus, .form-row textarea:focus{
+  outline:none; border-color:var(--caramel);
+}
+.form-row input:invalid:not(:placeholder-shown), .form-row textarea:invalid:not(:placeholder-shown){
+  border-color:var(--dutch-red);
+}
+.contact-form .btn{border:none; cursor:pointer;}
+.form-status{margin:14px 0 0; font-size:.88rem; font-weight:600; min-height:1.2em;}
+.form-status.is-success{color:#2e7d4f;}
+.form-status.is-error{color:var(--dutch-red);}
+
 /* FOOTER */
 .site-footer{background:var(--graphite); color:var(--ivory-60); padding:26px 0;}
-.footer-inner{display:flex; justify-content:space-between; font-size:.8rem; flex-wrap:wrap; gap:8px;}
+.footer-inner{display:flex; justify-content:space-between; align-items:center; font-size:.8rem; flex-wrap:wrap; gap:8px 24px;}
+.footer-legal{display:flex; gap:16px;}
+.footer-legal a{color:var(--ivory-60);}
+.footer-legal a:hover{color:var(--gold);}
+
+/* LEGAL PAGES (RGPD / CGU) */
+.legal-content{max-width:760px; margin:0 auto;}
+.legal-content h1{font-size:clamp(1.8rem, 4vw, 2.6rem); margin-top:.2em;}
+.legal-content h2{font-size:1.25rem; margin-top:1.6em;}
+.legal-content p{color:#4a453d;}
+.legal-content a{color:var(--caramel-dark); text-decoration:underline;}
+.legal-content a:hover{color:var(--caramel);}
+
+/* 404 PAGE */
+.notfound{min-height:60vh; display:flex; align-items:center;}
+.notfound-content{max-width:640px;}
+.notfound-content h1{font-size:clamp(1.8rem, 4vw, 2.6rem);}
 
 /* RESPONSIVE */
 @media (max-width: 860px){
